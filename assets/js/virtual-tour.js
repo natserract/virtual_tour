@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         sceneFadeDuration: 1000,
       },
       autoLoad: true,
-      "autoRotate": -2,
+      autoRotate: -2,
       showControls: false,
 
       scenes: {
@@ -90,14 +90,51 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Easy ways with jquery
-  $(document).on('click', "[data-panelleum-scene]", function(e) {
+  $(document).on("click", "[data-panelleum-scene]", function (e) {
     const target = e.currentTarget;
-    const sceneId = target.getAttribute('data-panelleum-scene')
-    
+    const sceneId = target.getAttribute("data-panelleum-scene");
+
     // Navigate to new scene based on scene id
-    viewer.loadScene(sceneId)
+    viewer.loadScene(sceneId);
 
     // Close the lightbox
-    globalContentLightbox.close()
-  })
+    globalContentLightbox.close();
+  });
+
+  // Handle audio controls
+  var player = document.getElementById("sound");
+
+  // Handle default play audio
+  const audioPlay = localStorage.getItem("audioPlay");
+
+  if (player) {
+    const audioIcon = $("#audioControl").children();
+    
+    if (audioPlay == 'true') {
+      player.play()
+      
+      $(audioIcon).toggleClass("bi-volume-up-fill", true);
+      $(audioIcon).toggleClass("bi-volume-off-fill", false);
+
+    } else {
+      player.pause()
+      $(audioIcon).toggleClass("bi-volume-up-fill", false);
+      $(audioIcon).toggleClass("bi-volume-off-fill", true);
+    }
+  }
+
+  $("#audioControl").click(function () {
+    const el = this.children[0];
+    $(el).toggleClass("bi-volume-up-fill");
+    $(el).toggleClass("bi-volume-off-fill");
+
+    const isPlay = $(el).hasClass("bi-volume-up-fill");
+    localStorage.setItem("audioPlay", isPlay);
+
+    if (isPlay) {
+      player.play();
+    } else {
+      player.pause();
+    }
+  });
 });
