@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "info",
       createTooltipFunc: hotspot,
       createTooltipArgs: "Art Museum Drive",
-    })
+    });
 
     pannellum_custom_controls(viewer);
   }
@@ -164,21 +164,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const glightbox = GLightbox({
-    selector: '.glightboxInfo'
+    selector: ".glightboxInfo",
   });
 
   function hotspot(hotSpotDiv, args) {
-    $(hotSpotDiv).addClass('glightboxInfo')
-    console.log('el', args)
-    
+    $(hotSpotDiv).addClass("glightboxInfo");
+    console.log("el", args);
+
     // TODO: validate condition by args <-> createTooltipArgs
-    $(hotSpotDiv).click(function(el) {
+    $(hotSpotDiv).click(function (el) {
       glightbox.insertSlide({
         href: "https://purasakenan.netlify.app/media/popup_5FB150E4_4DC8_8D37_41B5_D220740FD2EF_0_3.png?v=1659166195603",
-        width: '90vw'
-      })
+        width: "90vw",
+      });
       // https://purasakenan.netlify.app/media/popup_597171A6_4DC8_8F33_41CE_867809C76D95_0_3.png?v=1659166195603
-      glightbox.open()
-    })
+      glightbox.open();
+    });
   }
 });
