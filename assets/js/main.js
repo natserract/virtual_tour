@@ -4,6 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var globalLightBox;
 var globalContentLightbox; // used in virtual-tour.js
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -134,6 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
     touchNavigation: false,
     dragToleranceY: 0,
   });
+  globalLightBox = glightbox;
   globalContentLightbox = glightboxContentFrame
 
   /**

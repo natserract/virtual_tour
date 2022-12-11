@@ -39,15 +39,39 @@
   font-size: 17px !important;
 }
 
-.other-controls {
+.control-left {
   position: absolute;
   bottom: 18px;
-  right: 25px;
+  left: 80px;
   z-index: 10;
   display: flex;
   align-items: center;
 }
-.other-controls .ctrl {
+.control-left .ctrl{
+  width: 37px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(200, 200, 200, 0.8);
+  cursor: pointer;
+  font-size: 19px;
+  padding: 0px;
+  color: #333;
+}
+.control-left .ctrl:hover {
+  background: rgba(200, 200, 200, 1);
+}
+.control-right {
+  position: absolute;
+  bottom: 18px;
+  right: 80px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.control-right .ctrl {
   width: 37px;
   height: 35px;
   display: flex;
@@ -61,11 +85,11 @@
   color: #333;
 }
 
-.other-controls .ctrl:hover {
+.control-right .ctrl:hover {
   background: rgba(200, 200, 200, 1);
 }
 
-.other-controls > *:not(:last-child) {
+.control-right > *:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -76,4 +100,42 @@
 }
 .portfolio-container .portfolio-item .portfolio-info {
   margin-top: 10px;
+}
+
+/* Custom hotspot */
+/* .custom-hotspot {
+  height: 50px;
+  width: 50px;
+  background: #f00;
+}
+div.custom-tooltip span {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  max-width: 200px;
+  padding: 5px 10px;
+  margin-left: -220px;
+  cursor: default;
+}
+div.custom-tooltip:hover span{
+  visibility: visible;
+}
+div.custom-tooltip:hover span:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  bottom: -20px;
+  left: -10px;
+  margin: 0 50%;
+} */
+
+.pnlm-hotspot-base {
+  cursor: pointer;
 }

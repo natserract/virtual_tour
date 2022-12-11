@@ -52,7 +52,33 @@ document.addEventListener("DOMContentLoaded", () => {
           ],
         },
       },
+
+      hotSpotDebug: true,
+      // hotSpots: [
+      //   {
+      //     pitch: -9.4,
+      //     yaw: 222.6,
+      //     type: "info",
+      //     createTooltipFunc: hotspot,
+      //     createTooltipArgs: "Art Museum Drive",
+      //   },
+      //   {
+      //     pitch: -0.9,
+      //     yaw: 144.4,
+      //     type: "info",
+      //     createTooltipFunc: hotspot,
+      //     createTooltipArgs: "North Charles Street",
+      //   },
+      // ],
     });
+
+    viewer.addHotSpot({
+      pitch: -9.4,
+      yaw: 222.6,
+      type: "info",
+      createTooltipFunc: hotspot,
+      createTooltipArgs: "Art Museum Drive",
+    })
 
     pannellum_custom_controls(viewer);
   }
@@ -109,15 +135,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (player) {
     const audioIcon = $("#audioControl").children();
-    
-    if (audioPlay == 'true') {
-      player.play()
-      
+
+    if (audioPlay == "true") {
+      player.play();
+
       $(audioIcon).toggleClass("bi-volume-up-fill", true);
       $(audioIcon).toggleClass("bi-volume-off-fill", false);
-
     } else {
-      player.pause()
+      player.pause();
       $(audioIcon).toggleClass("bi-volume-up-fill", false);
       $(audioIcon).toggleClass("bi-volume-off-fill", true);
     }
@@ -137,4 +162,23 @@ document.addEventListener("DOMContentLoaded", () => {
       player.pause();
     }
   });
+
+  const glightbox = GLightbox({
+    selector: '.glightboxInfo'
+  });
+
+  function hotspot(hotSpotDiv, args) {
+    $(hotSpotDiv).addClass('glightboxInfo')
+    console.log('el', args)
+    
+    // TODO: validate condition by args <-> createTooltipArgs
+    $(hotSpotDiv).click(function(el) {
+      glightbox.insertSlide({
+        href: "https://purasakenan.netlify.app/media/popup_5FB150E4_4DC8_8D37_41B5_D220740FD2EF_0_3.png?v=1659166195603",
+        width: '90vw'
+      })
+      // https://purasakenan.netlify.app/media/popup_597171A6_4DC8_8F33_41CE_867809C76D95_0_3.png?v=1659166195603
+      glightbox.open()
+    })
+  }
 });
