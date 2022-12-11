@@ -19,8 +19,9 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #008374;
+  --color-primary: #7734f9;
   --color-secondary: #f85a40;
+  --bg-color: linear-gradient(rgb(113, 44, 249), rgba(113, 44, 249, 0.95));
 }
 
 /* Smooth scroll behavior */
@@ -42,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #00b6a1;
+  color: #7634f9cf;
   text-decoration: none;
 }
 
@@ -53,6 +54,10 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+}
+
+.font-bold {
+  font-weight: 700 !important;
 }
 
 /*--------------------------------------------------------------
@@ -302,6 +307,7 @@ section {
   z-index: 997;
   height: 90px;
   background-color: var(--color-primary);
+  background-image: var(--bg-color);
 }
 
 .header.sticked {
@@ -373,7 +379,7 @@ section {
     font-family: var(--font-secondary);
     font-size: 16px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.84);
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -509,7 +515,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: #6223dd;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -608,7 +614,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(0, 106, 93, 0.8);
+    background: var(--color-primary);
     z-index: 9996;
   }
 }
@@ -616,6 +622,9 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
+.about .section-header h2 {
+  font-weight: 700;
+}
 .about h3 {
   font-weight: 700;
   font-size: 28px;
@@ -840,6 +849,24 @@ section {
 /*--------------------------------------------------------------
 # Call To Action Section
 --------------------------------------------------------------*/
+.call-to-action {
+  background-color: #f6f6f6;
+}
+.call-to-action .section-header {
+  padding-bottom: 20px;
+}
+.call-to-action .section-header h2 {
+  font-weight: 700;
+}
+.call-to-action .section-header p {
+  color: #333;
+}
+
+.call-to-action p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
 .call-to-action .container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") center center;
   background-size: cover;
@@ -855,16 +882,11 @@ section {
   margin-bottom: 20px;
 }
 
-.call-to-action p {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
 .call-to-action .play-btn {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: radial-gradient(var(--color-primary) 50%, rgba(127, 0, 131, 0.7));
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -888,10 +910,10 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border: 5px solid rgba(188, 15, 194, 0.7);
   top: -15%;
   left: -15%;
-  background: rgba(198, 16, 0, 0);
+  background: rgba(188, 15, 194, 0.7);
 }
 
 .call-to-action .play-btn:after {
@@ -1030,7 +1052,7 @@ section {
 }
 
 .services .service-item:hover .icon:before {
-  background: #00b6a1;
+  /* background: #00b6a1; */
 }
 
 .services .service-item:hover h3 {
@@ -1143,6 +1165,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.portfolio {
+  padding-bottom: 80px;
+}
 .portfolio .portfolio-flters {
   padding: 0 0 20px 0;
   margin: 0 auto;
@@ -1227,6 +1252,26 @@ section {
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
 }
+
+.portfolio .buy-btn {
+  display: inline-block;
+  padding: 10px 40px;
+  border-radius: 50px;
+  color: #fff;
+  border: 1px solid rgba(0, 131, 116, 0.2);
+  background: var(--color-primary);
+  transition: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-primary);
+  transition: 0.3s;
+}
+
+.portfolio .buy-btn:hover {
+  background: transparent;
+  color: var(--color-primary);
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
@@ -1613,6 +1658,9 @@ section {
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
+.faq {
+  padding: 80px 0;
+}
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
@@ -1916,7 +1964,20 @@ section {
   width: 100%;
   position: relative;
   background: var(--color-primary);
-  padding: 60px 0 0 0;
+  background-image: var(--bg-color);
+  padding: 60px 0px 0px 0px;
+  min-height: 530px;
+}
+
+.hero-welcome-tour {
+  min-height: 100vh;
+  height: 100vh;
+}
+.hero-welcome-tour .container {
+  padding-top: 80px;
+}
+.hero.hero-welcome-tour .btn-watch-video{
+  margin-left: 0;
 }
 
 @media (min-width: 1365px) {
@@ -2604,7 +2665,7 @@ section {
 .footer {
   font-size: 14px;
   background-color: var(--color-primary);
-  padding: 50px 0;
+  padding: 30px 0;
   color: white;
 }
 

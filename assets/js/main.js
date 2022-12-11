@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   }
   window.addEventListener('load', navbarlinksActive);
-  document.addEventListener('scroll', navbarlinksActive);
+  // document.addEventListener('scroll', navbarlinksActive);
 
   /**
    * Mobile nav toggle
