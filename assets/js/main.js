@@ -4,6 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+var globalContentLightbox; // used in virtual-tour.js
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -125,6 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+  const glightboxContentFrame = GLightbox({
+    selector: '.glightboxContentFrame',
+    draggable: true,
+    height: '100vh',
+    touchNavigation: false,
+    dragToleranceY: 0,
+  });
+  globalContentLightbox = glightboxContentFrame
 
   /**
    * Scroll top button
@@ -288,5 +298,4 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
-
 });

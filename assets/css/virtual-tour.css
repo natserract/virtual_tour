@@ -1,0 +1,79 @@
+#panorama {
+  width: 100vw;
+  height: 100vh;
+}
+#controls {
+  position: absolute;
+  bottom: 15px;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 3px;
+}
+.ctrl {
+  padding: 8px 5px;
+  width: 30px;
+  text-align: center;
+  background: rgba(200, 200, 200, 0.8);
+  display: inline-block;
+  cursor: pointer;
+  font-size: 17px;
+}
+.ctrl:hover {
+  background: rgba(200, 200, 200, 1);
+}
+
+.pnlm-panorama-info {
+  top: 25px;
+  height: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnlm-panorama-info .pnlm-title-box {
+  padding: 7px 20px;
+  font-size: 17px !important;
+}
+
+.other-controls {
+  position: absolute;
+  bottom: 18px;
+  right: 25px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.other-controls .ctrl {
+  width: 37px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(200, 200, 200, 0.8);
+  cursor: pointer;
+  font-size: 19px;
+  padding: 0px;
+  color: #333;
+}
+
+.other-controls .ctrl:hover {
+  background: rgba(200, 200, 200, 1);
+}
+
+.other-controls > *:not(:last-child) {
+  margin-right: 10px;
+}
+
+.portfolio-isotope {
+  overflow: scroll;
+  max-height: 100vh;
+  padding-bottom: 10rem;
+}
+.portfolio-container .portfolio-item .portfolio-info {
+  margin-top: 10px;
+}
