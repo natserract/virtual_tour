@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       scenes: {
         circle: {
-          title: "Area Parkir",
-          hfov: 110,
-          pitch: -3,
-          yaw: 117,
+          title: "Gang 2",
+          hfov: 200,
+          pitch: -10,
+          yaw: 1,
           type: "equirectangular",
-          panorama: "https://pannellum.org/images/bma-1.jpg",
+          panorama: "https://ik.imagekit.io/2nnk1shfi/20221212_224923_049.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670856788678",
           hotSpots: [
             {
               pitch: -2.1,
