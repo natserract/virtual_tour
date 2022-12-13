@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
-          panorama: "https://pannellum.org/images/bma-1.jpg",
+          panorama: "https://ik.imagekit.io/2nnk1shfi/percobaan_baru.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670912156713",
           hotSpots: [
             {
               pitch: -0.6,
