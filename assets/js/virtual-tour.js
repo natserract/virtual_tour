@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
               pitch: -0.6,
               yaw: 37.1,
               type: "scene",
-              text: "Mason Circle",
+              text: "ke kantor Keuangan",
               sceneId: "circle",
               targetYaw: -23,
               targetPitch: 2,
