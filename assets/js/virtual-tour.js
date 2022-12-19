@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       scenes: {
         circle: {
-          title: "Gang 2",
+          title: "Kantor Keuangan",
           hfov: 200,
           pitch: -10,
           yaw: 1,
@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
               pitch: -2.1,
               yaw: 132.9,
               type: "scene",
-              text: "Spring House or Dairy",
+              text: "Hidayatullah keren",
               sceneId: "house",
             },
           ],
         },
 
         house: {
-          title: "Spring House or Dairy",
+          title: "Kantor Guru Putri",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
