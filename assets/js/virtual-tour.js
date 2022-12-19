@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
-          panorama: "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834
+          panorama: "https://ik.imagekit.io/2nnk1shfi/percobaan_baru.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670912156713",
           hotSpots: [
             {
               pitch: -0.6,
@@ -53,26 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
 
-
-      house: {
-        title: "Spring House or Dairy",
-        hfov: 110,
-        yaw: 5,
-        type: "equirectangular",
-        panorama: "https://ik.imagekit.io/2nnk1shfi/percobaan_baru.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670912156713",
-        hotSpots: [
-          {
-            pitch: -0.6,
-            yaw: 37.1,
-            type: "scene",
-            text: "Mason Circle",
-            sceneId: "circle",
-            targetYaw: -23,
-            targetPitch: 2,
-          },
-        ],
-      },
-    },
       hotSpotDebug: true,
       // hotSpots: [
       //   {
