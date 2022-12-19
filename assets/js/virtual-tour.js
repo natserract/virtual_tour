@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function pannellum_init() {
     viewer = pannellum.viewer("panorama", {
       default: {
-        firstScene: "circle",
+        firstScene: "scnene_id_1",
         sceneFadeDuration: 1000,
       },
       autoLoad: true,
@@ -15,70 +15,110 @@ document.addEventListener("DOMContentLoaded", () => {
       showControls: false,
 
       scenes: {
-        circle: {
+        // Scene 1
+        scnene_id_1: {
           title: "Kantor Keuangan",
           hfov: 200,
           pitch: -10,
           yaw: 1,
           type: "equirectangular",
-          panorama: "https://ik.imagekit.io/2nnk1shfi/20221212_224923_049.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670856788678",
+          panorama:
+            "https://ik.imagekit.io/2nnk1shfi/20221212_224923_049.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670856788678",
           hotSpots: [
             {
               pitch: -2.1,
               yaw: 132.9,
               type: "scene",
-              text: "Hidayatullah keren",
-              sceneId: "house",
+              text: "Kantor Guru Putri",
+              sceneId: "scnene_id_2",
             },
           ],
         },
 
-        house: {
+        // Scene 2
+        scnene_id_2: {
           title: "Kantor Guru Putri",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
-          panorama: "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+          panorama:
+            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
           hotSpots: [
             {
               pitch: -0.6,
               yaw: 37.1,
               type: "scene",
-              text: "ke kantor Keuangan",
-              sceneId: "circle",
+              text: "Judul Scene Id 3",
+              sceneId: "scnene_id_3",
               targetYaw: -23,
               targetPitch: 2,
             },
           ],
         },
+
+        // Scene 3
+        scnene_id_3: {
+          title: "Judul Scene Id 3",
+          hfov: 110,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Judul Scene Id 4",
+              sceneId: "scnene_id_4",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+
+        // Scene 4
+        scnene_id_4: {
+          title: "Judul Scene Id 4",
+          hfov: 110,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Judul Scene Id 5",
+              sceneId: "scnene_id_5",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+
+        // Scene 5
+        scnene_id_5: {
+          title: "Judul Scene Id 5",
+          hfov: 110,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+        },
       },
 
       hotSpotDebug: true,
-      // hotSpots: [
-      //   {
-      //     pitch: -9.4,
-      //     yaw: 222.6,
-      //     type: "info",
-      //     createTooltipFunc: hotspot,
-      //     createTooltipArgs: "Art Museum Drive",
-      //   },
-      //   {
-      //     pitch: -0.9,
-      //     yaw: 144.4,
-      //     type: "info",
-      //     createTooltipFunc: hotspot,
-      //     createTooltipArgs: "North Charles Street",
-      //   },
-      // ],
     });
 
-    viewer.addHotSpot({
-      pitch: -9.4,
-      yaw: 222.6,
-      type: "info",
-      createTooltipFunc: hotspot,
-      createTooltipArgs: "Art Museum Drive",
-    });
+    // viewer.addHotSpot({
+    //   pitch: -9.4,
+    //   yaw: 222.6,
+    //   type: "info",
+    //   createTooltipFunc: hotspot,
+    //   createTooltipArgs: "Art Museum Drive",
+    // });
 
     pannellum_custom_controls(viewer);
   }
