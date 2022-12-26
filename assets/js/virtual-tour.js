@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
               pitch: -2.1,
               yaw: 132.9,
               type: "scene",
-              text: "Kantor Guru Putri",
+              text: "Gang taman 2",
               sceneId: "scnene_id_2",
             },
           ],
