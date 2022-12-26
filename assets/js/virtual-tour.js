@@ -97,15 +97,37 @@ document.addEventListener("DOMContentLoaded", () => {
             },
           ],
         },
-
-        // Scene 5
-        scnene_id_5: {
+        
+        // Scene 4
+        scnene_id_4: {
           title: "Gang taman 5",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
           panorama:
             "https://ik.imagekit.io/2nnk1shfi/360/05.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064149246",
+          hotSpots: [
+            {
+              pitch: -0.6,
+              yaw: 37.1,
+              type: "scene",
+              text: "Gang taman 6",
+              sceneId: "scnene_id_5",
+              targetYaw: -23,
+              targetPitch: 2,
+            },
+          ],
+        },
+
+
+        // Scene 5
+        scnene_id_5: {
+          title: "Gang taman 6",
+          hfov: 110,
+          yaw: 5,
+          type: "equirectangular",
+          panorama:
+            "https://ik.imagekit.io/2nnk1shfi/360/06.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064148985",
         },
       },
 
