@@ -1989,6 +1989,28 @@ section {
   margin-left: 0;
 }
 
+.hero.hero-banner {
+  background: url('https://ik.imagekit.io/2nnk1shfi/mi1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1671419776483') center no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+.hero.hero-banner:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero.hero-banner > div {
+  z-index: 5;
+}
+
 @media (min-width: 1365px) {
   .hero {
     background-attachment: fixed;
