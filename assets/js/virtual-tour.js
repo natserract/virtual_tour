@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", () => {
       scenes: {
         // Scene 1
         scnene_id_1: {
-          title: "Kantor Keuangan",
+          title: "Gang taman",
           hfov: 200,
           pitch: -10,
           yaw: 1,
           type: "equirectangular",
           panorama:
-            "https://ik.imagekit.io/2nnk1shfi/20221212_224923_049.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670856788678",
+            "https://ik.imagekit.io/2nnk1shfi/360/01.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064170061",
           hotSpots: [
             {
               pitch: -2.1,
@@ -37,18 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Scene 2
         scnene_id_2: {
-          title: "Kantor Guru Putri",
+          title: "Gang taman 2",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
           panorama:
-            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+            "https://ik.imagekit.io/2nnk1shfi/360/02.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064169453",
           hotSpots: [
             {
               pitch: -0.6,
               yaw: 37.1,
               type: "scene",
-              text: "Judul Scene Id 3",
+              text: "Gang taman 3",
               sceneId: "scnene_id_3",
               targetYaw: -23,
               targetPitch: 2,
@@ -58,18 +58,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Scene 3
         scnene_id_3: {
-          title: "Judul Scene Id 3",
+          title: "Gang taman 3",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
           panorama:
-            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+            "https://ik.imagekit.io/2nnk1shfi/360/03.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064169958",
           hotSpots: [
             {
               pitch: -0.6,
               yaw: 37.1,
               type: "scene",
-              text: "Judul Scene Id 4",
+              text: "Gang taman 4",
               sceneId: "scnene_id_4",
               targetYaw: -23,
               targetPitch: 2,
@@ -79,18 +79,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Scene 4
         scnene_id_4: {
-          title: "Judul Scene Id 4",
+          title: "Gang taman 4",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
           panorama:
-            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+            "https://ik.imagekit.io/2nnk1shfi/360/04.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064133362",
           hotSpots: [
             {
               pitch: -0.6,
               yaw: 37.1,
               type: "scene",
-              text: "Judul Scene Id 5",
+              text: "Gang taman 5",
               sceneId: "scnene_id_5",
               targetYaw: -23,
               targetPitch: 2,
@@ -100,12 +100,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Scene 5
         scnene_id_5: {
-          title: "Judul Scene Id 5",
+          title: "Gang taman 5",
           hfov: 110,
           yaw: 5,
           type: "equirectangular",
           panorama:
-            "https://ik.imagekit.io/2nnk1shfi/kantor_MI_putri.jpeg?ik-sdk-version=javascript-1.4.3&updatedAt=1671410703834",
+            "https://ik.imagekit.io/2nnk1shfi/360/05.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1672064149246",
         },
       },
 
