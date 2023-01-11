@@ -19,9 +19,9 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #7734f9;
+  --color-primary: #007776;
   --color-secondary: #f85a40;
-  --bg-color: linear-gradient(rgb(113, 44, 249), rgba(113, 44, 249, 0.95));
+  --bg-color: linear-gradient(#007776, #028280);
 }
 
 /* Smooth scroll behavior */
@@ -53,7 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-primary);
+  font-family: var(--font-primary) !important;
 }
 
 .font-bold {
@@ -859,16 +859,20 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background-color: #f6f6f6;
+  background-image: var(--bg-color);
 }
 .call-to-action .section-header {
   padding-bottom: 20px;
 }
 .call-to-action .section-header h2 {
   font-weight: 700;
+  color: #fff;
+}
+.call-to-action .section-header h2:after {
+  background: #fff;
 }
 .call-to-action .section-header p {
-  color: #333;
+  color: #fff;
 }
 
 .call-to-action p {
@@ -895,7 +899,7 @@ section {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(127, 0, 131, 0.7));
+  background: radial-gradient(var(--color-primary) 50%, rgb(1, 127, 125));
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -919,10 +923,10 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(188, 15, 194, 0.7);
+  border: 5px solid rgb(1, 127, 125);
   top: -15%;
   left: -15%;
-  background: rgba(188, 15, 194, 0.7);
+  background: rgb(1, 127, 125);
 }
 
 .call-to-action .play-btn:after {
@@ -1454,6 +1458,7 @@ section {
 # Our Team Section
 --------------------------------------------------------------*/
 .team .member {
+  width: 100%;
   text-align: center;
   background: #fff;
   border-radius: 10px;
@@ -1664,11 +1669,31 @@ section {
   }
 }
 
+.about {
+  padding: 80px 0;
+}
+.about .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+}
+
+.about .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.about .content p {
+  font-size: 15px;
+  color: #6c757d;
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
 .faq {
   padding: 80px 0;
+  background-image: var(--bg-color);
 }
 .faq .content h3 {
   font-weight: 400;
@@ -1683,7 +1708,7 @@ section {
 
 .faq .content p {
   font-size: 15px;
-  color: #6c757d;
+  color: #fff;
 }
 
 .faq .accordion-item {
