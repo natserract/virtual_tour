@@ -631,8 +631,9 @@ section {
 /*--------------------------------------------------------------
 # About Us Section
 --------------------------------------------------------------*/
-.about .section-header h2 {
+.about  h2 {
   font-weight: 700;
+  font-size: 35px;
 }
 
 .about h3 {
@@ -1476,6 +1477,7 @@ section {
 .team .member img {
   border-radius: 10px;
   overflow: hidden;
+  max-height: 300px;
 }
 
 .team .member .member-content {
@@ -1531,6 +1533,30 @@ section {
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+.footer .team {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+.footer .team > .container{
+  border-bottom: solid 2px #fff;
+}
+.footer .team .member {
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  box-shadow: none;
+}
+.footer .team .member span {
+  color: #fff;
+}
+.footer .team .member img {
+  border-radius: 50%;
+  overflow: hidden;
+  max-height: 60%;
 }
 
 /*--------------------------------------------------------------
@@ -1676,7 +1702,7 @@ section {
 }
 
 .about {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .about .content h3 {
@@ -1691,10 +1717,19 @@ section {
 }
 
 .about .content p {
-  font-size: 15px;
+  font-size: 17px;
   color: #6c757d;
 }
 
+.about .vision p{
+  font-size: 40px;
+}
+
+.mision .content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
@@ -2012,8 +2047,7 @@ section {
 }
 
 .hero-welcome-tour {
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 500px;
 }
 
 .hero-welcome-tour .container {
@@ -2028,7 +2062,16 @@ section {
   background: url('https://ik.imagekit.io/2nnk1shfi/mi1.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1671419776483') center no-repeat;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  min-height: 400px;
+}
+
+.hero.hero-banner .text-header {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+}
+.hero.hero-banner h2 {
+  font-size: 40px
 }
 
 .hero.hero-banner:after {
@@ -2732,6 +2775,7 @@ section {
   font-size: 14px;
   background-color: var(--color-primary);
   padding: 30px 0;
+  padding-top: 0;
   color: white;
 }
 
@@ -2840,11 +2884,24 @@ section {
   color: #fff;
 }
 
+.footer ul {
+  list-style: none;
+  margin: 0;
+}
+.footer ul li {
+  display: inline;
+  padding: 0 10px;
+  font-size: 17px;
+}
+.footer ul a {
+  color: #fff;
+}
+
 .float {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
+  bottom: 10px;
   left: 40px;
   background-color: #25d366;
   color: #FFF;
@@ -2868,4 +2925,35 @@ section {
 
 .font-bold {
   font-weight: bold;
+}
+
+.block {
+  display: block;
+}
+
+h2.after {
+  position: relative;
+  padding-bottom: 23px;
+}
+
+h2.after::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #222222;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.img-full {
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-right {
+  text-align: right;
 }
